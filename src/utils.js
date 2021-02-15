@@ -9,7 +9,7 @@ export function didUserWin(player, computer){
     if (player === 'rock' && computer === 'scissors') return 'You win!';
     if (player === 'paper' && computer === 'rock') return 'You win!';
     if (player === 'scissors' && computer === 'paper') return 'You win!';
-    if (player === computer) return 'Its a draw!';
+    if (player === computer) return 'It\'s a draw!';
     else return 'You lost!!';
 }
 export function getImage (string, array){
