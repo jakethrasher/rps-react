@@ -17,7 +17,8 @@ export default class App extends Component {
     totalPlays:0,
   }
 
-  handleClick=()=>{
+  handleClick=(e)=>{
+    e.preventDefault();
     let compThrow=getRandomThrow();
     let compImage=getImage(compThrow,throws)
     this.setState({
@@ -57,9 +58,9 @@ export default class App extends Component {
           </div>
 
           <div className="middle column">
-            <h1>VS</h1>
-            <button onClick={this.handleClick}>PLAY!</button>
+            <h1 style={{fontSize:'4rem'}}>VS</h1>
             <p className="results">{`${this.state.whoWon}`}</p>
+            <button onClick={this.handleClick}>PLAY!</button>
           </div>
 
           <div className="left column">

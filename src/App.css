@@ -61,7 +61,7 @@ button{
 button:active{
   background-color:rgb(181, 179, 179);
   transition-property: background-color;
-  transition-duration: 450ms; 
+  transition-duration: 100ms; 
 }
 
 .set-to-grid{
@@ -74,14 +74,18 @@ button:active{
   justify-content: center;
 }
 .middle{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display:grid;
+  grid-template-rows: 2fr 1fr 2fr;
+  justify-items: center;
 }
 .results{
   font-size:2rem;
+  margin: 0px;
 }
 .computer-image{
   width: 15em;
+}
+.main{
+  width: 80%;
+  margin: 0 auto;
 }
